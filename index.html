@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Formulários</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário</h1>
+    </header>
+    <main class="main-container">
+        <form>
+            <fieldset class="form">
+                <div class="form-container">
+                    <div class="form-container form-container-label">
+                        <label for="nome">Nome completo: <input id="nome" name="nome" type="text" required placeholder=" Nome completo"/></label>
+                        <label for="email">Email: <input id="email" name="email" type="email" required placeholder=" exemplo@gmail.com" /></label>
+                        <label for="senha">Senha: <input id="senha" name="senha" type="password" pattern="" required placeholder=" Digite a sua senha" /></label>
+                        <label for="data-nascimento">Data de nascimento: <input id="data-nascimento" name="data-nascimento" type="date" pattern="(\d{2})\/(\d{2})\/(\d{4})" /></label>
+                        <label for="avatar">Foto: <input id="avatar" name="avatar" type="file"></label>
+                        <label for="color">Cor favorita: <br><span class="color"><input type="color" id="color" name="color"></span></label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form">
+                <h2>Faria?</h2>
+                <div class="form-faria">
+                    <label for="faria"><input id="faria" type="radio" name="faria" class="faria" /> Sim</label>
+                    <label for="faria"><input id="faria" type="radio" name="faria" class="faria" /> Não</label>
+                </div>
+                <br>
+                <label for="termos">
+                  <input id="termos" type="checkbox" required name="termos" class="" /> Aceitar termos e condições</a>
+                </label>
+            </fieldset>
+            <fieldset class="form">
+                <div class="comments">
+                    <h2>Quem?</h2>
+                    <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Comentários ou sugestões"></textarea>
+                  </label>
+                </div>
+            </fieldset>
+            <div class="submit form">
+                <label for="submit"><input type="submit" value="Enviar" /></label>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
